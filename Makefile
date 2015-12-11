@@ -23,12 +23,6 @@ all:
 	cat jquery.flot.threshold.js | ./jsmin.out >> flot.0.8.3.minified.js
 	cat jquery.flot.time.js | ./jsmin.out >> flot.0.8.3.minified.js
 
-	echo -e "\n\n/*\nexcanvas.js, copyright 2006 Google Inc.\n\nLicensed under the Apache License, Version 2.0 (the "License");\nYou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n*/" >> flot.0.8.3.minified.js
-	cat excanvas.js | ./jsmin.out >> flot.0.8.3.minified.js
-
-	echo -e "\n\n/*\njquery.colorhelpers.js, plugin for jQuery for working with colors.\nVersion 1.1.\nReleased under the MIT license by Ole Laursen, October 2009.\n*/" >> flot.0.8.3.minified.js	
-	cat jquery.colorhelpers.js | ./jsmin.out >> flot.0.8.3.minified.js
-
 	rm -rf jsmin.out
 
 test:
